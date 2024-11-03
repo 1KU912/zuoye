@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chujihezi{
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chujiliebiao{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .chujiliebiao>li{
+            list-style: none;
+            float: left;
+            margin: 20px 3px;
+            width: 90px;
+            height: 40px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .erjihezi{
+            position: absolute;
+            top: 90px;
+            right: 800px;
+            width: 90px;
+            height: 134px;
+
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+        }
+        .erjiliebiao{
+            padding: 0px;
+        }
+        .erjiliebiao li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 13px;
+        }
+        .chujiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+        .sanjihezi{
+            position: absolute;
+            top: 10px;
+            right: 800px;
+            width: 90px;
+            height: 134px;
+
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+        }
+        .sanjiliebiao{
+            padding: 0px;
+        }
+        .sanjiliebiao li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 13px;
+        }
+        .chujiliebiao>li:hover>.sanjihezi{
+            display: block;
+        }
+        .sijihezi{
+            position: absolute;
+            top: 170px;
+            right: 800px;
+            width: 90px;
+            height: 134px;
+
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+        }
+        .sijiliebiao{
+            padding: 0px;
+        }
+        .sijiliebiao li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 13px;
+        }
+        .chujiliebiao>li:hover>.sijihezi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chujihezi">
+        <ul class="chujiliebiao">
+            <li>
+                <a href="#">娱乐</a>
+                <div class="sanjihezi">
+                    <ul class="sanjiliebiao">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">音乐</a></li>
+                        <li><a href="#">看剧</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">科技</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">电脑</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">美食</a>
+                <div class="sijihezi">
+                    <ul class="sijiliebiao">
+                        <li><a href="#">外卖</a></li>
+                        <li><a href="#">到店</a></li>
+                        <li><a href="#">优惠</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
